@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wait a minute...">
+    <meta name="keywords" content="...who are you?">
+    <meta name="author" content="Forgotten:D">
+
+    <link rel="stylesheet" href="perfil.css">
+
+    <title>☉ Perfil ☉</title>
+</head>
+<body>
+    <header>
+        <h1>PERFIL</h1>
+    </header class="wally">
+    <main>
+        <div class="profile-container">
+            <!-- Imagem de perfil grande -->
+            <div class="profile-image">
+                <img src="Img/Smile.png" alt="Imagem de Perfil" id="profileImage">
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </div>
+            
+            <!-- Informações complementares -->
+            <div class="profile-info">
+                <form id="profileForm">
+                    <label for="nickname">Nickname:</label>
+                    <input type="text" id="nickname" name="nickname" value="Seu Nickname">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" value="seuemail@exemplo.com">
+
+                    <label for="password">Senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" value="********">
+                        <img src="Img/Bill.png" alt="Mostrar Senha" class="toggle-password" id="togglePassword">
+                    </div>
+
+                    <label for="description">Descrição:</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Escreva algo sobre você..."></textarea>
+                    
+                    <button type="submit" id="saveButton">Salvar Alterações</button>
+
+                    <button type="button" id="libraryButton">Ir para Minha Biblioteca</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="perfil.js"></script>
+</body>
+</html>

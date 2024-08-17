@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="There is a secret chord, mein freund...">
+    <meta name="keywords" content="DC Comics, Marvel Comics, Image Comics, Dark Horse Comics, manga">
+    <meta name="author" content="Forgotten:D">
+
+    <link rel="stylesheet" href="read.css">
+
+    <title>☉ Legado de Heróis ☉</title>
+</head>
+<body>
+    <!-- Telão como cabeçalho de cartaz -->
+    <header class="hero">
+        <!-- Letreiro grande -->
+        <div class="hero-text">
+            <h1>GOOD MORNING, VIETNAM!</h1>
+        </div>
+        <!-- Contêiner de pesquisa e ícone de perfil -->
+        <div class="top-bar">
+            <div class="search-container">
+                <form id="searchForm">
+                    <input type="text" placeholder="Pesquisar HQs..." name="search">
+                    <button type="submit"><img src="Img/search.png" alt="Search"></button>
+                </form>
+            </div>
+            <!-- Ícone de Perfil e menu de usuário logado -->
+            <div class="profile-container">
+                <div class="profile-icon">
+                    <img src="Img/Smile.png" alt="Perfil" id="profileButton">
+                </div>
+                <div id="userMenu" class="user-menu">
+                    <ul>
+                        <li><a href="#" id="profileLink">Configurar Perfil</a></li>
+                        <li><a href="#">Minha Biblioteca</a></li>
+                        <li><a href="#" id="logoutButton">Sair da Conta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Tela de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Senha:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <img src="Img/Bill.png" alt="Mostrar Senha" class="toggle-password" id="togglePassword">
+                </div>
+
+                <label for="confirmPassword">Confirmar Senha:</label>
+                <div class="password-container">
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <img src="Img/Bill.png" alt="Mostrar Senha" class="toggle-password" id="toggleConfirmPassword">
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="read.js"></script>
+</body>
+</html>

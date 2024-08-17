@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(101, 58, 112);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.wally{
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 300px;
+    background-image: url('Img/quiscustodiet.gif');
+    background-size: cover;
+    background-position: center;
+
+}
+header {
+    background-color: rgb(101, 58, 112);
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajusta para o cabeçalho */
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(101, 58, 112);
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Transição suave para opacidade */
+}
+
+.profile-image img:hover {
+    opacity: 0.7; /* Reduz a opacidade ao passar o mouse */
+}
+
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-info input[type="text"],
+.profile-info input[type="email"],
+.profile-info input[type="password"],
+.profile-info textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background-color: rgb(101, 58, 112);
+    color: yellow;
+}
+
+.profile-info button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-info button:hover {
+    background-color: #f5c942;
+}
+
+/* Estilo para o ícone de visualização de senha */
+.password-container {
+    position: relative;
+}
+
+.password-container img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo para o botão de salvar */
+#saveButton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveButton:hover {
+    background-color: black;
+    color: yellow;
+}
+
+/* Foco nos campos de input */
+.profile-info input[type="text"]:focus,
+.profile-info input[type="email"]:focus,
+.profile-info input[type="password"]:focus,
+.profile-info textarea:focus {
+    outline: 2px solid yellow;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para o botão de biblioteca */
+#libraryButton {
+    font-size: 16px;
+}
